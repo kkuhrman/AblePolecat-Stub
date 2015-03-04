@@ -7,14 +7,20 @@
 #
 
 ##
-# Uncomment if overriding any configuration files in usr.
+# Uncomment if overriding local environment path configuration settings.
 #
-#usr/.gitignore
+# etc/polecat/conf/path.config
 
 ##
-# Uncomment if overriding any settings in .htaccess
+# This file contains local database user password and other private settings.
+# It should only be committed if this infomration is public (e.g. example code).
 #
-#var/.gitignore
+etc/polecat/conf/project.xml
+
+##
+# Uncomment if web server configuration changes are made elsewhere (e.g. httpd.conf).
+#
+#www/htdocs/.htaccess
 
 ##
 # Mac system files.
