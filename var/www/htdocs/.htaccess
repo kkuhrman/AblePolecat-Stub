@@ -32,6 +32,11 @@ Options +MultiViews
   RewriteRule "(^|/)\." - [F]
   
   #
+  # Block access to the Able Polecat default path configuration file.
+  #
+  RewriteRule "path.config" - [F]
+  
+  #
   # If using an alias to access the site (e.g. http://localhost/AblePolecat-Stub), 
   # define the base below relative to the server document root. 
   # (e.g. RewriteBase /AblePolecat-Stub)
