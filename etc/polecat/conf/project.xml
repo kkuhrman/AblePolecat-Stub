@@ -1,0 +1,51 @@
+<?xml version="1.0" standalone="yes"?>
+<polecat_project xmlns:polecat="http://polecat.kuhrman.com/">
+    <polecat:package id="499b1f19-c298-11e4-a12d-0050569e00a2" name="AblePolecat-Stub" type="APP">
+      <polecat:repositoryUrl>https://github.com/kkuhrman/AblePolecat-Stub</polecat:repositoryUrl>
+      <polecat:classes>
+        <polecat:class id="" name="" register="0">
+          <polecat:path></polecat:path>
+          <polecat:classFactoryMethod></polecat:classFactoryMethod>
+        </polecat:class>
+      </polecat:classes>
+      <polecat:classLibraries>
+        <polecat:classLibrary id="" name="AblePolecat-Mod-SalesforceSoapApi" type="MOD" use="0">
+          <polecat:path></polecat:path>
+        </polecat:classLibrary>
+      </polecat:classLibraries>
+      <polecat:components>
+        <polecat:component id="" name="" register="0"/>
+      </polecat:components>
+      <polecat:connectors>
+        <polecat:connector id="" name="home" requestMethod="GET" accessDeniedCode="200" register="0">
+          <polecat:resourceId></polecat:resourceId>
+          <polecat:classId></polecat:classId>
+        </polecat:connector>
+      </polecat:connectors>
+      <polecat:locaters>
+        <polecat:locater id="polecat-database-0.7.0" name="project database">
+          <polecat:dsn>mysql://username:password@localhost/databasename</polecat:dsn>
+        </polecat:locater>
+      </polecat:locaters>
+      <polecat:resources>
+        <polecat:resource id="" name="home" register="0">
+          <polecat:classId></polecat:classId>
+        </polecat:resource>
+      </polecat:resources>
+      <polecat:responses>
+        <polecat:response id="" name="home" statusCode="200" register="0">
+          <polecat:resourceId></polecat:resourceId>
+          <polecat:classId></polecat:classId>
+        </polecat:response>
+      </polecat:responses>
+      <polecat:templates>
+        <polecat:template id="" name="page.tpl" register="0">
+          <polecat:articleId></polecat:articleId>
+          <polecat:docType>a:4:{s:12:"namespaceUri";s:28:"http://www.w3.org/1999/xhtml";s:13:"qualifiedName";s:4:"html";s:8:"publicId";s:25:"-//W3C//DTD XHTML 1.1//EN";s:8:"systemId";s:44:"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd";}</polecat:docType>
+          <polecat:path>template/default/page.tpl</polecat:path>
+          <polecat:templateScope>document</polecat:templateScope>
+          <polecat:themeName>default</polecat:themeName>
+        </polecat:template>
+      </polecat:templates>
+    </polecat:package>
+</polecat_project>
