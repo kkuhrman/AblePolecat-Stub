@@ -3,6 +3,8 @@
  * @file      AblePolecat-Stub/var/www/htdocs/index.php
  * @brief     All requests to Able Tabby are routed through index.php.
  * 
+ * DO NOT MODIFY THIS FILE.
+ *
  * @author    Karl Kuhrman
  * @copyright [BDS II License] (https://github.com/kkuhrman/AblePolecat/blob/master/LICENSE.md)
  */

@@ -2,6 +2,10 @@
 # @file      AblePolecat-Stub/var/www/htdocs/.htaccess
 # @brief     Apache host access settings.
 #
+# IF YOU INTEND TO EXCLUDE THIS FILE FROM YOUR PROJECT OR IF YOU INTEND TO MAKE
+# CHANGES TO THIS FILE, BE SURE TO ADD THE FOLLOWING LINE TO .git/info/exclude:
+#    "var/www/htdocs/.htaccess"
+#
 # @author    Karl Kuhrman
 # @copyright [BDS II License] (https://github.com/kkuhrman/AblePolecat/blob/master/LICENSE.md)
 #
