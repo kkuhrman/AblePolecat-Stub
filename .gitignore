@@ -1,0 +1,28 @@
+##
+# @file      AblePolecat-Stub/.gitignore
+# @brief     Git ignore settings for Able Polecat project.
+#
+# @author    Karl Kuhrman
+# @copyright [BDS II License] (https://github.com/kkuhrman/AblePolecat/blob/master/LICENSE.md)
+#
+
+##
+# Uncomment if web server configuration changes are made elsewhere (e.g. httpd.conf).
+#
+#var/www/htdocs/.htaccess
+
+##
+# Uncomment if overriding local environment path configuration settings.
+#
+# usr/etc/polecat/conf/path.config
+
+##
+# This file contains local database user password and other private settings.
+# It should only be committed if this infomration is public (e.g. example code).
+#
+usr/etc/polecat/conf/project.xml
+
+##
+# Mac system files.
+#
+.DS_Store

@@ -1,0 +1,12 @@
+##
+# @file      AblePolecat-Stub/.gitignore
+# @brief     Git ignore settings for Able Polecat project.
+#
+# @author    Karl Kuhrman
+# @copyright [BDS II License] (https://github.com/kkuhrman/AblePolecat/blob/master/LICENSE.md)
+#
+
+##
+# Uncomment if web server configuration changes are made elsewhere (e.g. httpd.conf).
+#
+#www/htdocs/.htaccess
