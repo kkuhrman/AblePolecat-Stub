@@ -36,11 +36,11 @@ define the alias name in a file you create at ./AblePolecat-Stub/usr/etc/polecat
 'AblePolecat-Stub' with your own alias, if necessary):
 
      `
-     if (!defined('ABLE_POLECAT_ALIAS')) {
-       global $ABLE_POLECAT_ALIAS;
-       !isset($ABLE_POLECAT_ALIAS) ? $ABLE_POLECAT_ALIAS = 'AblePolecat-Stub' : NULL;
-       define('ABLE_POLECAT_ALIAS', $ABLE_POLECAT_ALIAS);
-     }
+    if (!defined('ABLE_POLECAT_ALIAS')) {
+        global $ABLE_POLECAT_ALIAS;
+        !isset($ABLE_POLECAT_ALIAS) ? $ABLE_POLECAT_ALIAS = 'AblePolecat-Stub' : NULL;
+        define('ABLE_POLECAT_ALIAS', $ABLE_POLECAT_ALIAS);
+    }
      `
     
 5. If you wish to use the boot log feature, you must define the boot log path in ./AblePolecat-Stub/usr/etc/polecat/conf/path.config 
