@@ -56,3 +56,9 @@ define the alias name in a file you create at ./AblePolecat-Stub/usr/etc/polecat
 
 6. Create the project database and user. See the [database](https://github.com/kkuhrman/AblePolecat/wiki/Able-Polecat-Project-Database) 
 section on the Able Polecat [wiki](https://github.com/kkuhrman/AblePolecat/wiki).
+7. Go to your project URL in a web browser. You will be prompted for the name 
+of your project database, user and password. If there are issues with your 
+project configuration, the error(s) will be dumped to the response output. 
+Otherwise, Polecat will install your project database, register the core class 
+library classes and your project objects (class, connector, resource, response 
+and template).
