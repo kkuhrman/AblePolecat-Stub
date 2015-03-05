@@ -34,6 +34,7 @@ and make the latter file writeable; or make the directory ./AblePolecat/usr/etc/
 4. If you must define an alias (e.g. your project's web address is something like http://localhost/AblePolecat-Stub),
 define the alias name in a file you create at ./AblePolecat-Stub/usr/etc/polecat/conf/path.config (substitute 
 'AblePolecat-Stub' with your own alias, if necessary):
+
      `
      if (!defined('ABLE_POLECAT_ALIAS')) {
        global $ABLE_POLECAT_ALIAS;
@@ -44,6 +45,7 @@ define the alias name in a file you create at ./AblePolecat-Stub/usr/etc/polecat
     
 5. If you wish to use the boot log feature, you must define the boot log path in ./AblePolecat-Stub/usr/etc/polecat/conf/path.config 
 (you can define any path and/or file name you wish provided the parent directory is writeable by the web server user/group):
+
      `
      if (!defined('ABLE_POLECAT_BOOT_LOG')) {
        global $ABLE_POLECAT_BOOT_LOG;
@@ -51,5 +53,6 @@ define the alias name in a file you create at ./AblePolecat-Stub/usr/etc/polecat
        define('ABLE_POLECAT_BOOT_LOG', $ABLE_POLECAT_BOOT_LOG);
      }
      `
+
 6. Create the project database and user. See the [database](https://github.com/kkuhrman/AblePolecat/wiki/Able-Polecat-Project-Database) 
 section on the Able Polecat [wiki](https://github.com/kkuhrman/AblePolecat/wiki).
