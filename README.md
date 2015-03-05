@@ -50,4 +50,4 @@ define the alias name in a file you create at ./AblePolecat-Stub/usr/etc/polecat
         define('ABLE_POLECAT_BOOT_LOG', $ABLE_POLECAT_BOOT_LOG);
       }
 
-
+      
