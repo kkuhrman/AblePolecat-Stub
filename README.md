@@ -35,19 +35,19 @@ and make the latter file writeable; or make the directory ./AblePolecat/usr/etc/
 define the alias name in a file you create at ./AblePolecat-Stub/usr/etc/polecat/conf/path.config (substitute 
 'AblePolecat-Stub' with your own alias, if necessary):
 
-     if (!defined('ABLE_POLECAT_ALIAS')) {
+     `if (!defined('ABLE_POLECAT_ALIAS')) {
        global $ABLE_POLECAT_ALIAS;
        !isset($ABLE_POLECAT_ALIAS) ? $ABLE_POLECAT_ALIAS = 'AblePolecat-Stub' : NULL;
        define('ABLE_POLECAT_ALIAS', $ABLE_POLECAT_ALIAS);
-     }
+     }`
     
 5. If you wish to use the boot log feature, you must define the boot log path in ./AblePolecat-Stub/usr/etc/polecat/conf/path.config 
 (you can define any path and/or file name you wish provided the parent directory is writeable by the web server user/group):
 
-     if (!defined('ABLE_POLECAT_BOOT_LOG')) {
+     `if (!defined('ABLE_POLECAT_BOOT_LOG')) {
        global $ABLE_POLECAT_BOOT_LOG;
        $ABLE_POLECAT_BOOT_LOG = implode(DIRECTORY_SEPARATOR, array(ABLE_POLECAT_VAR, 'log', 'bootlog.csv'));
        define('ABLE_POLECAT_BOOT_LOG', $ABLE_POLECAT_BOOT_LOG);
-     }
+     }`
 
 
