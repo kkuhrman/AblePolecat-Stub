@@ -51,5 +51,5 @@ define the alias name in a file you create at ./AblePolecat-Stub/usr/etc/polecat
        define('ABLE_POLECAT_BOOT_LOG', $ABLE_POLECAT_BOOT_LOG);
      }
      `
-
-      
+6. Create the project database and user. See the [database](https://github.com/kkuhrman/AblePolecat/wiki/Able-Polecat-Project-Database) 
+section on the Able Polecat [wiki](https://github.com/kkuhrman/AblePolecat/wiki).
