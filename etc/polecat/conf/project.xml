@@ -25,7 +25,7 @@
         </polecat:connector>
       </polecat:connectors>
       <polecat:locaters>
-        <polecat:locater id="polecat-database-0.7.0" name="project database">
+        <polecat:locater id="polecat-database-0.7.0" name="polecat">
           <polecat:dsn>mysql://username:password@localhost/databasename</polecat:dsn>
         </polecat:locater>
       </polecat:locaters>
