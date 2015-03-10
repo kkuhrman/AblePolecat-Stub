@@ -7,6 +7,12 @@
 #
 
 ##
+# If using .htaccess to configure directory access, copy file from usr/share/local
+# to var/www/htdocs.
+#
+var/www/htdocs/.htaccess
+
+##
 # Changes to this file will effect only the local environment.
 #
 usr/etc/polecat/conf/path.config
