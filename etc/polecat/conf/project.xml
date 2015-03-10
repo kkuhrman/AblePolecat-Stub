@@ -44,7 +44,7 @@
         <polecat:template id="e8ccb19f-c393-11e4-a12d-0050569e00a2" name="page.tpl" register="1">
           <polecat:articleId>811f89de-c38f-11e4-a12d-0050569e00a2</polecat:articleId>
           <polecat:docType>a:4:{s:12:"namespaceUri";s:28:"http://www.w3.org/1999/xhtml";s:13:"qualifiedName";s:4:"html";s:8:"publicId";s:25:"-//W3C//DTD XHTML 1.1//EN";s:8:"systemId";s:44:"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd";}</polecat:docType>
-          <polecat:path>template/default/home/page.tpl</polecat:path>
+          <polecat:path>template/home/page.tpl</polecat:path>
           <polecat:templateScope>document</polecat:templateScope>
           <polecat:themeName>default</polecat:themeName>
         </polecat:template>
