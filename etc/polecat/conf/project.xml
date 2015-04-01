@@ -18,36 +18,68 @@
       <polecat:components>
         <!-- this project does not use components -->
       </polecat:components>
-      <polecat:connectors>
-        <polecat:connector id="7738bc92-c38f-11e4-a12d-0050569e00a2" name="home" requestMethod="GET" accessDeniedCode="200" register="1">
-          <polecat:resourceId>25b1d43d-c38f-11e4-a12d-0050569e00a2</polecat:resourceId>
-          <polecat:classId>7bf12d40-23df-11e4-8c21-0800200c9a66</polecat:classId>
-        </polecat:connector>
-      </polecat:connectors>
       <polecat:locaters>
         <polecat:locater id="polecat-database-0.7.0" name="polecat">
-          <polecat:dsn>mysql://username:password@localhost/databasename</polecat:dsn>
+          <polecat:dsn>mysql://user:password@localhost/database</polecat:dsn>
         </polecat:locater>
       </polecat:locaters>
-      <polecat:resources>
-        <polecat:resource id="25b1d43d-c38f-11e4-a12d-0050569e00a2" name="home" register="1">
-          <polecat:classId>ad37da13-c38e-11e4-a12d-0050569e00a2</polecat:classId>
-        </polecat:resource>
-      </polecat:resources>
-      <polecat:responses>
-        <polecat:response id="811f89de-c38f-11e4-a12d-0050569e00a2" name="home" statusCode="200" register="1">
-          <polecat:resourceId>25b1d43d-c38f-11e4-a12d-0050569e00a2</polecat:resourceId>
-          <polecat:classId>34d689dd-c390-11e4-a12d-0050569e00a2</polecat:classId>
-        </polecat:response>
-      </polecat:responses>
+      <polecat:resourceClasses>
+        <!-- An Able Polecat resource maps AblePolecat_ResourceInterface to 
+             HTTP request resource (URI) on the host machine. Polecat will 
+             generate UUID for each resource in each group. Some registry 
+             objects - notably [connector]/transactionClass and [response]/
+             responseClass - reference the id of a resource. Since resource 
+             ids are generated at install time, they are referenced in the 
+             configuration file by resourceGroup attribute 'id', which then 
+             corresponds to the id attribute encapsulating the resources 
+             within a resourceClass element in the configuration file. In the 
+             configuration file, the URI path is used as the id attribute of 
+             the resource within the resourceClass element; the URI path may 
+             be assigned to the name attribute within the resourceGroup 
+             elements, but not the id as this would render the XML invalid. -->
+        <polecat:resourceClass id="ad37da13-c38e-11e4-a12d-0050569e00a2" name="AblePolecat_Stub_Resource_Home">
+          <polecat:resource id="home" register="1"/>
+          <!-- more resources... -->
+        </polecat:resourceClass>
+      </polecat:resourceClasses>
+      <polecat:responseClasses>
+        <!-- An Able Polecat response maps AblePolecat_Message_ResponseInterface to 
+             HTTP request resource and HTTP response status code. -->
+        <polecat:responseClass id="34d689dd-c390-11e4-a12d-0050569e00a2" name="AblePolecat_Stub_Response" register="1">
+          <polecat:resourceGroups>
+            <polecat:resourceGroup id="ad37da13-c38e-11e4-a12d-0050569e00a2" statusCode="200" register="1">
+              <polecat:resource name="home" register="1"/>
+            </polecat:resourceGroup>
+          </polecat:resourceGroups>
+        </polecat:responseClass>
+      </polecat:responseClasses>
       <polecat:templates>
+        <!-- An Able Polecat template provides content and representation 
+             instructions for one or more components or responses. 
+             In the database, the field articleId references a response id or a 
+             component id. In the configuration file, this field references the 
+             respective response or component class id. -->
         <polecat:template id="e8ccb19f-c393-11e4-a12d-0050569e00a2" name="page.tpl" register="1">
-          <polecat:articleId>811f89de-c38f-11e4-a12d-0050569e00a2</polecat:articleId>
+          <polecat:themeName>default</polecat:themeName>
+          <polecat:templateScope>document</polecat:templateScope>
+          <polecat:articleId>34d689dd-c390-11e4-a12d-0050569e00a2</polecat:articleId>
           <polecat:docType>a:4:{s:12:"namespaceUri";s:28:"http://www.w3.org/1999/xhtml";s:13:"qualifiedName";s:4:"html";s:8:"publicId";s:25:"-//W3C//DTD XHTML 1.1//EN";s:8:"systemId";s:44:"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd";}</polecat:docType>
           <polecat:path>template/home/page.tpl</polecat:path>
-          <polecat:templateScope>document</polecat:templateScope>
-          <polecat:themeName>default</polecat:themeName>
         </polecat:template>
       </polecat:templates>
+      <polecat:transactionClasses>
+        <!-- An Able Polecat connector maps HTTP request resource and method
+          to a class implementing AblePolecat_TransactionInterface. Each 
+          unique resource/method combination is registered given a UUID. -->
+        <polecat:transactionClass id="7bf12d40-23df-11e4-8c21-0800200c9a66" name="AblePolecat_Transaction_Unrestricted">
+          <polecat:articleId/>
+          <polecat:resourceGroups>
+            <polecat:resourceGroup id="ad37da13-c38e-11e4-a12d-0050569e00a2" name="page" requestMethod="GET" accessDeniedCode="200" register="1">
+              <polecat:resource name="home" register="1"/>
+              <!-- more resources here... -->
+            </polecat:resourceGroup>
+          </polecat:resourceGroups>
+        </polecat:transactionClass>
+      </polecat:transactionClasses>
     </polecat:package>
 </polecat_project>

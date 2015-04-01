@@ -1,11 +1,6 @@
 ##
-# @file      AblePolecat-Stub/var/www/htdocs/.htaccess
-# @brief     Apache host access settings.
-#
-# IF YOU INTEND TO EXCLUDE THIS FILE FROM YOUR PROJECT OR IF YOU INTEND TO MAKE
-# CHANGES TO THIS FILE, BE SURE TO ADD THE FOLLOWING LINE TO .git/info/exclude:
-#    "var/www/htdocs/.htaccess"
-#
+# @file      AblePolecat-Stub/usr/share/local/.htaccess
+# @brief     Example Apache host access settings.
 # @author    Karl Kuhrman
 # @copyright [BDS II License] (https://github.com/kkuhrman/AblePolecat/blob/master/LICENSE.md)
 #
@@ -32,21 +27,17 @@ Options +MultiViews
   RewriteRule "(^|/)\." - [F]
   
   #
-  # Block access to the Able Polecat default path configuration file.
-  #
-  RewriteRule "path.config" - [F]
-  
-  #
-  # If using an alias to access the site (e.g. http://localhost/AblePolecat-Stub), 
+  # If using an alias to access the site (e.g. http://localhost/polecat), 
   # define the base below relative to the server document root. 
-  # (e.g. RewriteBase /AblePolecat-Stub)
+  # (e.g. RewriteBase /polecat)
   #
-  # RewriteBase /AblePolecat-Stub
+  RewriteBase /AblePolecat-Stub
   
   #
   # Pass all requests not referring directly to files in the file system to
   # index.php.
   #
+  RewriteCond %{REQUEST_FILENAME} !(.*)\.(js|ico|gif|jpg|png|css|eot|ttf|woff|html)$
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_URI} !=/favicon.ico
