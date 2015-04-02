@@ -38,7 +38,7 @@
              be assigned to the name attribute within the resourceGroup 
              elements, but not the id as this would render the XML invalid. -->
         <polecat:resourceClass id="ad37da13-c38e-11e4-a12d-0050569e00a2" name="AblePolecat_Stub_Resource_Home">
-          <polecat:resource id="home" register="1"/>
+          <polecat:resource id="home" register="1" />
           <!-- more resources... -->
         </polecat:resourceClass>
       </polecat:resourceClasses>
